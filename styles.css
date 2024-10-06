@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'D-DIN-Bold';
+    src: url('D-DIN-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+/* 移除 body 和 html 的 margin 和 padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'D-DIN-Bold'; 
+}
+
+/* 导航栏 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3); /* 导航栏透明度 */
+    transition: top 0.3s ease-in-out, background 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 垂直居中 */
+    padding: 15px;
+    z-index: 1000;
+    box-sizing: border-box;
+    height: 60px; /* 导航栏高度 */
+}
+
+/* LOGO 样式 (公司名字) */
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 导航链接列表 */
+.main-nav ul {
+    list-style: none;
+    display: flex; /* 水平排列 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 导航链接每一项 */
+.main-nav ul li {
+    margin: 0 15px; /* 设置链接之间的间距 */
+}
+
+/* 导航链接的样式 */
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* 设置链接的字体大小 */
+}
+
+/* 侧边栏内容隐藏时 */
+.sidebar-content {
+    display: none;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.sidebar-content.sidebar-active {
+    display: block;
+    opacity: 1;
+}
+/* 侧边栏链接列表 */
+.sidebar-content ul {
+    list-style: none;
+    padding: 10px;
+}
+
+/* 侧边栏链接 */
+.sidebar-content ul li {
+    margin: 5px 0;
+}
+
+.sidebar-content ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section 设置：确保文字和按钮垂直排列 */
+section {
+    width: 100vw; /* 占满视口宽度 */
+    height: 100vh; /* 占满视口高度 */
+    display: flex;
+    flex-direction: column; /* 垂直排列内容 */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 为每个 section 添加背景图片 */
+#section1 {
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#section2 {
+    background-image: url('image2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#section3 {
+    background-image: url('image3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+#section4 {
+    background-image: url('image4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+
+/* 按钮样式 */
+.action-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d3d3d3; /* 设置为淡灰色 */
+    color: black; /* 按钮文字颜色改为黑色 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+}
+
+.action-button:hover {
+    background-color: #b0b0b0; /* hover 时颜色稍微加深 */
+    transform: scale(1.05);
+}
+.action-button:active {
+    transform: scale(0.95);
+}

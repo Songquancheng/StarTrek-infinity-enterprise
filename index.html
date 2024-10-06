@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏示例</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <!-- 公司名字 -->
+        <div class="logo"><img src="Mars_One_logo.png" alt="Logo" style="height: 40px;"></div>
+        
+        <!-- 导航链接 -->
+        <div class="main-nav">
+            <ul>
+                <li><a href="#section1">MarsOne</a></li>
+                <li><a href="#section2">Our Mission </a></li>
+                <li><a href="#section3">Fund Raising</a></li>
+                <li><a href="#section4">Join Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- 侧边栏按钮 -->
+        <div class="sidebar">
+            <button onclick="toggleSidebar()">☰</button>
+            <div class="sidebar-content" id="sidebar-content">
+                <ul>
+                    <li><a href="#section1">Home page</a></li>
+                    <li><a href="#section2">Our Mission</a></li>
+                    <li><a href="#section3">Fund Raising</a></li>
+                    <li><a href="#section4">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <main>
+        <section id="section1">
+            <h2>Start humanity's journey of interstellar exploration</h2>
+            <p>Join us for future planetary colonization!</p>
+            <button class="action-button" onclick="location.href='http://example.com/page1'">Apply to join us</button>
+        </section>
+        <section id="section2">
+            <h2>Our Mission</h2>
+            <p>Our mission is to explore the unknown universe and open up new homes for humanity. The Mars 99 mission aims to establish the first human colony and offer hope for life in the future. We firmly believe that through space exploration and advanced technology, we can solve the challenges facing the Earth and usher in a new era of human development. Every volunteer will shoulder this great mission, inherit the spirit of the pioneers, and become a bright star in the history of mankind. Join us in this great adventure and create endless possibilities!</p>
+            <button class="action-button" onclick="location.href='http://example.com/page2'">Learn more</button>
+        </section>
+        <section id="section3">
+            <h2>Fundraising Activities</h2>
+            <p>Our project needs financial support. Every donation will go directly to advancing our space exploration and research programs. Please support our mission!</p>
+            <button class="action-button" onclick="location.href='http://example.com/page3'">Donate</button>
+        </section>
+        <section id="section4">
+            <h2>Recruitment Information</h2>
+            <p>We are looking for brave explorers to participate in the Mars 99 mission! Faced with a realistic "reality show" type interview, the winner will have the chance to embark on a journey to a new planet!</p>
+            <button class="action-button" onclick="location.href='http://example.com/page3'">Click to join</button>
+        </section>        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
